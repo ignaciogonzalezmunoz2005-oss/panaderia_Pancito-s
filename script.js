@@ -46,4 +46,36 @@ document.addEventListener("DOMContentLoaded", function () {
         if (firstActive) activateTab(firstActive.dataset.tab);
     }
 
+    // Slider de imágenes
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const dots = Array.from(document.querySelectorAll('.slider-dot'));
+    const prevButton = document.querySelector('.slider-control.prev');
+    const nextButton = document.querySelector('.slider-control.next');
+    let slideIndex = slides.findIndex(slide => slide.classList.contains('active'));
+    if (slideIndex === -1) slideIndex = 0;
+
+    function updateSlider(index) {
+        slides.forEach((slide, idx) => slide.classList.toggle('active', idx === index));
+        dots.forEach((dot, idx) => dot.classList.toggle('active', idx === index));
+        slideIndex = index;
+    }
+
+    function showNextSlide() {
+        updateSlider((slideIndex + 1) % slides.length);
+    }
+
+    function showPrevSlide() {
+        updateSlider((slideIndex - 1 + slides.length) % slides.length);
+    }
+
+    nextButton?.addEventListener('click', showNextSlide);
+    prevButton?.addEventListener('click', showPrevSlide);
+
+    dots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+            const target = Number(dot.dataset.slide);
+            updateSlider(target);
+        });
+    });
+
 });
