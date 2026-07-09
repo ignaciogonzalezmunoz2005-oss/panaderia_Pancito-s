@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pancito's</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h2 class="logo">Pancito's</h2>
+
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="texto-hero">
+      <p class="categoria">PANADERÍA</p>
+      <h1>Pancito's</h1>
+      <h2>sabor en cada bocado</h2>
+      <p>Tortas, küchenes, pan artesanal y empanadas elaboradas cada día.</p>
+
+      <a class="boton" href="#catalogo">Ver Productos</a>
+    </div>
+  </section>
+
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo</h2>
+    <p>Categorías principales de productos Pancito's.</p>
+
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="panaderia">Panadería</button>
+        <button class="tab-button" data-tab="tortas">Tortas</button>
+        <button class="tab-button" data-tab="cupcakes">Cupcakes</button>
+        <button class="tab-button" data-tab="empanadas">Empanadas</button>
+        <button class="tab-button" data-tab="kuchen">Kuchen</button>
+      </div>
+
+      <div class="tab-content active" id="panaderia">
+        <h3>Panadería</h3>
+        <div class="products">
+          <div class="product">
+            <img src="images/panaderia.jpg" alt="Baguette">
+            <h4>Baguette</h4>
+            <p class="price">$1.200</p>
+            <p class="desc">Baguette crujiente 400g</p>
+          </div>
+
+          <div class="product">
+            <img src="images/panaderia.jpg" alt="Marraqueta">
+            <h4>Marraqueta</h4>
+            <p class="price">$850</p>
+            <p class="desc">Tradicional, ideal para desayuno</p>
+          </div>
+
+          <div class="product">
+            <img src="images/panaderia.jpg" alt="Integral">
+            <h4>Pan Integral</h4>
+            <p class="price">$1.500</p>
+            <p class="desc">Con semillas y harina integral</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tortas">
+        <h3>Tortas</h3>
+        <div class="products">
+          <div class="product">
+            <img src="images/tortas.jpg" alt="Torta clásica">
+            <h4>Torta Clásica</h4>
+            <p class="price">$18.000</p>
+            <p class="desc">8 porciones, sabores a elección</p>
+          </div>
+
+          <div class="product">
+            <img src="images/tortas.jpg" alt="Torta personalizada">
+            <h4>Torta Personalizada</h4>
+            <p class="price">Desde $25.000</p>
+            <p class="desc">Decoración especial bajo pedido</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="cupcakes">
+        <h3>Cupcakes</h3>
+        <div class="products">
+          <div class="product">
+            <img src="images/cupcakes.jpg" alt="Cupcake vainilla">
+            <h4>Pack 6 Vainilla</h4>
+            <p class="price">$5.000</p>
+            <p class="desc">Con betún casero</p>
+          </div>
+
+          <div class="product">
+            <img src="images/cupcakes.jpg" alt="Cupcake chocolate">
+            <h4>Pack 6 Chocolate</h4>
+            <p class="price">$5.500</p>
+            <p class="desc">Intenso y húmedo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="empanadas">
+        <h3>Empanadas</h3>
+        <div class="products">
+          <div class="product">
+            <img src="images/empanadas.jpg" alt="Empanada carne">
+            <h4>Empanada de Carne</h4>
+            <p class="price">$1.200</p>
+            <p class="desc">Rellena y jugosa</p>
+          </div>
+
+          <div class="product">
+            <img src="images/empanadas.jpg" alt="Empanada queso">
+            <h4>Empanada de Queso</h4>
+            <p class="price">$1.200</p>
+            <p class="desc">Queso fundido</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="kuchen">
+        <h3>Kuchen</h3>
+        <div class="products">
+          <div class="product">
+            <img src="images/kuchen.jpg" alt="Kuchen frutal">
+            <h4>Kuchen Frutal</h4>
+            <p class="price">$9.000</p>
+            <p class="desc">Porción grande, frutas de estación</p>
+          </div>
+
+          <div class="product">
+            <img src="images/kuchen.jpg" alt="Kuchen manzana">
+            <h4>Kuchen Manzana</h4>
+            <p class="price">$8.500</p>
+            <p class="desc">Clásico con canela</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="nosotros" class="nosotros">
+    <div class="nosotros-inner">
+      <div class="nosotros-img">
+        <img src="images/nosotros.jpg" alt="Nuestra panadería">
+      </div>
+
+      <div class="nosotros-text">
+        <h2>Nosotros</h2>
+        <p>Panadería Pancito's elabora pan artesanal, tortas, küchenes y empanadas con ingredientes frescos y recetas tradicionales.</p>
+        <p>Horneamos diariamente utilizando técnicas artesanales y materias primas locales para ofrecer productos frescos y sabrosos.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="pedidos" class="pedidos">
+  <h2>Pedidos</h2>
+  <p>Realiza tu pedido por Instagram o Whatsapp y retira en nuestra panadería.</p>
+  </section>
+
+
+<section id="contacto" class="contacto">
+<h2>Contacto</h2>
+<p>Dirección: Cochrane 1030, Concepción</p> 
+<p>Teléfono: +56 (41) 224 0087</p> 
+<p>Instagram: @pancitos.pasteleria</p>
+</section>
+
+<footer>
+<p>&copy 2026 Pancito's. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
